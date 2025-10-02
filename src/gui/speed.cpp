@@ -55,8 +55,6 @@ void FurnaceGUI::drawSpeed(bool asChild) {
       float setHz=tempoView?e->curSubSong->hz*2.5:e->curSubSong->hz;
       if (ImGui::InputFloat("##Rate",&setHz,1.0f,10.0f,"%g")) { MARK_MODIFIED
         if (tempoView) setHz/=2.5;
-        if (setHz<1) setHz=1;
-        if (setHz>999) setHz=999;
         e->setSongRate(setHz);
       }
       if (tempoView) {

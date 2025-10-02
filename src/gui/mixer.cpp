@@ -226,9 +226,7 @@ void FurnaceGUI::drawMixer() {
   if (ImGui::Begin("Mixer",&mixerOpen,globalWinFlags|(settings.allowEditDocking?0:ImGuiWindowFlags_NoDocking),_("Mixer"))) {
     if (ImGui::BeginTabBar("MixerView")) {
       if (ImGui::BeginTabItem(_("Mixer"))) {
-        if (ImGui::SliderFloat(_("Master Volume"),&e->song.masterVol,0,3,"%.2fx")) {
-          if (e->song.masterVol<0) e->song.masterVol=0;
-          if (e->song.masterVol>3) e->song.masterVol=3;
+        if (ImGui::SliderFloat(_("Master Volume"),&e->song.masterVol,-65535,65535,"%.2fx")) { // babe wake up new s16 just dropped
           MARK_MODIFIED;
         } rightClickable
 
@@ -255,12 +253,7 @@ void FurnaceGUI::drawMixer() {
             ImGui::TableNextRow();
             ImGui::TableNextColumn();
             ImGui::SetNextItemWidth(ImGui::GetContentRegionAvail().x);
-            if (CWSliderFloat("##Volume",&vol,0,2)) {
-              if (doInvert) {
-                if (vol<0.0001) vol=0.0001;
-              }
-              if (vol<0) vol=0;
-              if (vol>10) vol=10;
+            if (CWSliderFloat("##Volume",&vol,-65535,65535)) {
               e->song.systemVol[i]=(doInvert)?-vol:vol;
               MARK_MODIFIED;
             } rightClickable
@@ -270,9 +263,7 @@ void FurnaceGUI::drawMixer() {
             ImGui::TableNextRow();
             ImGui::TableNextColumn();
             ImGui::SetNextItemWidth(ImGui::GetContentRegionAvail().x);
-            if (CWSliderFloat("##Panning",&e->song.systemPan[i],-1.0f,1.0f)) {
-              if (e->song.systemPan[i]<-1.0f) e->song.systemPan[i]=-1.0f;
-              if (e->song.systemPan[i]>1.0f) e->song.systemPan[i]=1.0f;
+            if (CWSliderFloat("##Panning",&e->song.systemPan[i],-65535.0f,65535.0f)) {
               MARK_MODIFIED;
             } rightClickable
             ImGui::TableNextColumn();
