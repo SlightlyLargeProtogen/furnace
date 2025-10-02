@@ -215,6 +215,53 @@ void FurnaceGUI::initSystemPresets() {
       }
     );
   ENTRY(
+  _("this will be [...] in 2014"), {}
+  )
+  SUB_ENTRY(
+    _("this will be Famicom with Namco 163 in 2014"), {
+      CH(DIV_SYSTEM_5E01, 1.0f, 0, ""),
+      CH(DIV_SYSTEM_NAMCO_CUS30, 1.0f, 0, "")
+    }
+  );
+  SUB_ENTRY(
+    _("this will be Sega Genesis/Mega Drive in 2014"), {
+      CH(DIV_SYSTEM_OPZ, 1.0f, 0, ""),
+      CH(DIV_SYSTEM_MSM6258, 0.5f, 0, ""),
+      CH(DIV_SYSTEM_T6W28, 1.0f, 0, "")
+    }
+  );
+  SUB_ENTRY(
+    _("this will be MSX + MoonSound in 2014"), {
+      CH(DIV_SYSTEM_SAA1099, 1.0f, 0, ""),
+      CH(DIV_SYSTEM_ESFM, 1.0f, 0, ""),
+      CH(DIV_SYSTEM_MULTIPCM, 1.0f, 0, "")
+    }
+  );
+  SUB_ENTRY(
+    _("this will be Commodore 64 (8580 SID + Sound Expander) in 2014"), {
+      CH(DIV_SYSTEM_SID2, 1.0f, 0, ""),
+      CH(DIV_SYSTEM_OPL2, 1.0f, 0, "")
+    }
+  );
+  SUB_ENTRY(
+    _("this will be Commodore 64 (8580 SID + Sound Expander) in 2014 (drums mode)"), {
+      CH(DIV_SYSTEM_SID2, 1.0f, 0, ""),
+      CH(DIV_SYSTEM_OPL2_DRUMS, 1.0f, 0, "")
+    }
+  );
+  SUB_ENTRY(
+    _("this will be Commodore 64 (8580 SID + Sound Expander) in 2024"), {
+      CH(DIV_SYSTEM_SID3, 1.0f, 0, ""),
+      CH(DIV_SYSTEM_OPL3, 1.0f, 0, "")
+    }
+  );
+  SUB_ENTRY(
+    _("this will be Commodore 64 (8580 SID + Sound Expander) in 2024 (drums mode)"), {
+      CH(DIV_SYSTEM_SID3, 1.0f, 0, ""),
+      CH(DIV_SYSTEM_OPL3_DRUMS, 1.0f, 0, "")
+    }
+  );
+  ENTRY(
     _("SNES"), {
       CH(DIV_SYSTEM_SNES, 1.0f, 0, "")
     }
