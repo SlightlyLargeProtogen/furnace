@@ -1715,7 +1715,7 @@ void FurnaceGUI::initSystemPresets() {
     _("MegaTronics Inc. PC/DA + Sound Expansion"), {
       CH(DIV_SYSTEM_PCSPKR, 0.5f, 0, ""),
       CH(DIV_SYSTEM_PCSPKR, 0.5f, 0, ""),
-      CH(DIV_SYSTEM_SMS, 1.0f, 0, "") // why is the SN7 called the SMS internally lmao
+      CH(DIV_SYSTEM_SMS, 1.0f, 0, "chipType=1") // why is the SN7 called the SMS internally lmao
     }
   );
   SUB_ENTRY(
