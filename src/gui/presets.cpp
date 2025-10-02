@@ -1707,28 +1707,28 @@ void FurnaceGUI::initSystemPresets() {
   );
   ENTRY(
     _("MegaTronics Inc. PC/DA"), { // a pocket computer is technically a computer, right?
-      CH(DIV_SYSTEM_PCSPKR, 1.0f, 0, ""),
-      CH(DIV_SYSTEM_PCSPKR, 1.0f, 0, "")
+      CH(DIV_SYSTEM_PCSPKR, 0.5f, 0, ""),
+      CH(DIV_SYSTEM_PCSPKR, 0.5f, 0, "")
     }
   );
   SUB_ENTRY(
     _("MegaTronics Inc. PC/DA + Sound Expansion"), {
-      CH(DIV_SYSTEM_PCSPKR, 1.0f, 0, ""),
-      CH(DIV_SYSTEM_PCSPKR, 1.0f, 0, ""),
+      CH(DIV_SYSTEM_PCSPKR, 0.5f, 0, ""),
+      CH(DIV_SYSTEM_PCSPKR, 0.5f, 0, ""),
       CH(DIV_SYSTEM_SMS, 1.0f, 0, "") // why is the SN7 called the SMS internally lmao
     }
   );
   SUB_ENTRY(
     _("MegaTronics Inc. PC/DA + FM Expansion"), {
-      CH(DIV_SYSTEM_PCSPKR, 1.0f, 0, ""),
-      CH(DIV_SYSTEM_PCSPKR, 1.0f, 0, ""),
+      CH(DIV_SYSTEM_PCSPKR, 0.5f, 0, ""),
+      CH(DIV_SYSTEM_PCSPKR, 0.5f, 0, ""),
       CH(DIV_SYSTEM_OPLL, 1.0f, 0, "")
     }
   );
   SUB_ENTRY(
     _("MegaTronics Inc. PC/DA + FM Expansion (drums mode)"), {
-      CH(DIV_SYSTEM_PCSPKR, 1.0f, 0, ""),
-      CH(DIV_SYSTEM_PCSPKR, 1.0f, 0, ""),
+      CH(DIV_SYSTEM_PCSPKR, 0.5f, 0, ""),
+      CH(DIV_SYSTEM_PCSPKR, 0.5f, 0, ""),
       CH(DIV_SYSTEM_OPLL_DRUMS, 1.0f, 0, "")
     }
   );
