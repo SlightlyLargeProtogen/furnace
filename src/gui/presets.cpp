@@ -1707,6 +1707,70 @@ void FurnaceGUI::initSystemPresets() {
   );
   CATEGORY_END;
 
+  CATEGORY_BEGIN(_("Hidden Systems"),_("systems that normally aren't available in this menu."));
+  ENTRY(
+    _("Normal Systems"), {}
+  );
+  SUB_ENTRY(
+    _("Dummy System"), {
+      CH(DIV_SYSTEM_DUMMY, 1.0f, 0, "")
+    }
+  );
+  SUB_ENTRY(
+    _("Yamaha YMU759 (MA-2)"), {
+      CH(DIV_SYSTEM_YMU759, 1.0f, 0, "")
+    }
+  );
+  SUB_ENTRY(
+    _("NEC μPD1771C-017"), {
+      CH(DIV_SYSTEM_UPD1771C, 1.0f, 0, "")
+    }
+  );
+  SUB_ENTRY(
+    _("5E01"), {
+      CH(DIV_SYSTEM_5E01, 1.0f, 0, "")
+    }
+  );
+  ENTRY(
+    _("Compound Systems"), {}
+  )
+  SUB_ENTRY(
+    _("Sega Genesis/Mega Drive (compound system)"), {
+      CH(DIV_SYSTEM_GENESIS, 1.0f, 0, "")
+    }
+  );
+  SUB_ENTRY(
+    _("Sega Genesis Extended Channel 3 (compound system)"), {
+      CH(DIV_SYSTEM_GENESIS_EXT, 1.0f, 0, "")
+    }
+  );
+  SUB_ENTRY(
+    _("NES + Konami VRC7 (compound system)"), {
+      CH(DIV_SYSTEM_NES_VRC7, 1.0f, 0, "")
+    }
+  );
+  SUB_ENTRY(
+    _("Famicom Disk System (compound system)"), {
+      CH(DIV_SYSTEM_NES_FDS, 1.0f, 0, "")
+    }
+  );
+  SUB_ENTRY(
+    _("Sega Master System + FM Expansion (compound system)"), {
+      CH(DIV_SYSTEM_SMS_OPLL, 1.0f, 0, "")
+    }
+  );
+  SUB_ENTRY(
+    _("DefleCade (compound system)"), {
+      CH(DIV_SYSTEM_ARCADE, 1.0f, 0, "")
+    }
+  );
+  SUB_ENTRY(
+    _("MSX + SCC (compound system)"), {
+      CH(DIV_SYSTEM_MSX2, 1.0f, 0, "")
+    }
+  );
+  CATEGORY_END
+
   CATEGORY_BEGIN(_("Arcade systems"),_("INSERT COIN"));
   // MANUFACTURERS
   ENTRY(
