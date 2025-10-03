@@ -1800,17 +1800,6 @@ void FurnaceGUI::initSystemPresets() {
   CATEGORY_END
 
   CATEGORY_BEGIN(_("Testing Area"),_("let's take some chiptune tests."));
-  ENTRY(
-    _(""), {}
-  );
-  SUB_ENTRY(
-    _(""), {}
-  );
-  SUB_SUB_ENTRY(
-    _(""), {
-      CH(DIV_SYSTEM_DUMMY, 1.0f, 0, "")
-    }
-  );
   CATEGORY_END;
 
   CATEGORY_BEGIN(_("Arcade systems"),_("INSERT COIN"));
