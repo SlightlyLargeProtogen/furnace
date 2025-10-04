@@ -890,9 +890,9 @@ void DivEngine::registerSystems() {
 
   sysDefs[DIV_SYSTEM_NES]=new DivSysDef(
     _("Ricoh 2A03"), NULL, 0x06, 0x06, 5, false, true, 0x161, false, (1U<<DIV_SAMPLE_DEPTH_1BIT_DPCM)|(1U<<DIV_SAMPLE_DEPTH_8BIT), 0, 0,
-    _("this is a testing of testeds testinging"),
-    {_("Bulse 1"), _("Bulse 2"), _("Tringle"), _("Yesise"), _("EDPCM")},
-    {"B1", "B2", "TR", "YES", "DMC"},
+    _("the sound chip found in the NES. (technically it's also the CPU but who cares)"),
+    {_("Pulse 1"), _("Pulse 2"), _("Triangle"), _("Noise"), _("DPCM")},
+    {"P1", "P2", "TR", "NO", "DMC"},
     {DIV_CH_PULSE, DIV_CH_PULSE, DIV_CH_WAVE, DIV_CH_NOISE, DIV_CH_PCM},
     {DIV_INS_NES, DIV_INS_NES, DIV_INS_NES, DIV_INS_NES, DIV_INS_NES},
     {DIV_INS_NULL, DIV_INS_NULL, DIV_INS_NULL, DIV_INS_NULL, DIV_INS_AMIGA},
