@@ -855,8 +855,8 @@ void DivEngine::registerSystems() {
   );
 
   sysDefs[DIV_SYSTEM_GB]=new DivSysDef(
-    _("Game Boy"), NULL, 0x04, 0x04, 4, false, true, 0x161, false, 0, 32, 16,
-    _("the most popular portable game console of the era."),
+    _("Sharp LR35902"), NULL, 0x04, 0x04, 4, false, true, 0x161, false, 0, 32, 16,
+    _("the sound chip found in the Game Boy.\nit's much like the Ricoh 2A03, but instead it's got a wavetable and DPCM went missing."),
     {_("Pulse 1"), _("Pulse 2"), _("Wavetable"), _("Noise")},
     {"S1", "S2", "WA", "NO"},
     {DIV_CH_PULSE, DIV_CH_PULSE, DIV_CH_WAVE, DIV_CH_NOISE},
@@ -872,8 +872,8 @@ void DivEngine::registerSystems() {
   );
 
   sysDefs[DIV_SYSTEM_PCE]=new DivSysDef(
-    _("PC Engine/TurboGrafx-16"), NULL, 0x05, 0x05, 6, false, true, 0x161, false, 1U<<DIV_SAMPLE_DEPTH_8BIT, 32, 32,
-    _("an '80s game console with a wavetable sound chip, popular in Japan."),
+    _("HuC6280"), NULL, 0x05, 0x05, 6, false, true, 0x161, false, 1U<<DIV_SAMPLE_DEPTH_8BIT, 32, 32,
+    _("the sound chip used in NEC's PC-Engine/TurboGrafx-16. (it's also technically the CPU but who cares)"),
     {_("Channel 1"), _("Channel 2"), _("Channel 3"), _("Channel 4"), _("Channel 5"), _("Channel 6")},
     {"CH1", "CH2", "CH3", "CH4", "CH5", "CH6"},
     {DIV_CH_WAVE, DIV_CH_WAVE, DIV_CH_WAVE, DIV_CH_WAVE, DIV_CH_WAVE, DIV_CH_WAVE},
@@ -923,7 +923,7 @@ void DivEngine::registerSystems() {
   );
 
   sysDefs[DIV_SYSTEM_C64_6581]=new DivSysDef(
-    _("MOS Technology 6581 SID"), NULL, 0x47, 0x47, 3, false, true, 0, false, 0, 0, 0,
+    _("MOS Technology SID (6581)"), NULL, 0x47, 0x47, 3, false, true, 0, false, 0, 0, 0,
     _("the older 6581 variant of sound chip used in the Commodore 64. it has synthesizer features like a filter and ADSR."),
     {_("Channel 1"), _("Channel 2"), _("Channel 3")},
     {"CH1", "CH2", "CH3"},
@@ -935,7 +935,7 @@ void DivEngine::registerSystems() {
   );
 
   sysDefs[DIV_SYSTEM_C64_8580]=new DivSysDef(
-    _("MOS Technology 8580 SID"), NULL, 0x07, 0x07, 3, false, true, 0, false, 0, 0, 0,
+    _("MOS Technology SID (8580)"), NULL, 0x07, 0x07, 3, false, true, 0, false, 0, 0, 0,
     _("the newer and improved 8580 variant of sound chip used in the Commodore 64. it has synthesizer features like a filter and ADSR."),
     {_("Channel 1"), _("Channel 2"), _("Channel 3")},
     {"CH1", "CH2", "CH3"},
@@ -996,8 +996,8 @@ void DivEngine::registerSystems() {
   );
 
   sysDefs[DIV_SYSTEM_AMIGA]=new DivSysDef(
-    _("Amiga"), NULL, 0x81, 0, 4, false, true, 0, false, 1U<<DIV_SAMPLE_DEPTH_8BIT, 0, 256,
-    _("a computer from the '80s with full sampling capabilities, giving it a sound ahead of its time."),
+    _("PAULA"), NULL, 0x81, 0, 4, false, true, 0, false, 1U<<DIV_SAMPLE_DEPTH_8BIT, 0, 256,
+    _("the sound chip found in the Amiga with full sampling capabilities (and other functions), giving it a sound ahead of its time."),
     {_("Channel 1"), _("Channel 2"), _("Channel 3"), _("Channel 4")},
     {"CH1", "CH2", "CH3", "CH4"},
     {DIV_CH_PCM, DIV_CH_PCM, DIV_CH_PCM, DIV_CH_PCM},

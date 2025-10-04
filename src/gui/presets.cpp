@@ -3764,7 +3764,7 @@ void FurnaceGUI::initSystemPresets() {
 
   CATEGORY_BEGIN(_("Sample"),_("chips/systems which use PCM or ADPCM samples for sound synthesis."));
   ENTRY(
-    _("Amiga"), {
+    _("PAULA"), {
       CH(DIV_SYSTEM_AMIGA, 1.0f, 0, "clockSel=1")
     },
     "tickRate=50"
@@ -3805,7 +3805,7 @@ void FurnaceGUI::initSystemPresets() {
     }
   );
   ENTRY(
-    _("SNES"), {
+    _("SPC700"), {
       CH(DIV_SYSTEM_SNES, 1.0f, 0, "")
     }
   );
@@ -3868,7 +3868,7 @@ void FurnaceGUI::initSystemPresets() {
 
   CATEGORY_BEGIN(_("Wavetable"),_("chips which use user-specified waveforms to generate sound."));
   ENTRY(
-    _("PC Engine"), {
+    _("HuC6280"), {
       CH(DIV_SYSTEM_PCE, 1.0f, 0, "")
     }
   );
@@ -3908,7 +3908,7 @@ void FurnaceGUI::initSystemPresets() {
     }
   );
   ENTRY(
-    _("Famicom Disk System (chip)"), {
+    _("Ricoh 2C33"), {
       CH(DIV_SYSTEM_FDS, 1.0f, 0, "")
     }
   );
@@ -3919,7 +3919,7 @@ void FurnaceGUI::initSystemPresets() {
     "tickRate=75.47169811320754716981"
   );
   ENTRY(
-    _("Virtual Boy"), {
+    _("VSU-VUE"), {
       CH(DIV_SYSTEM_VBOY, 1.0f, 0, "")
     },
     "tickRate=50.2734877734878"
@@ -3966,12 +3966,12 @@ void FurnaceGUI::initSystemPresets() {
     }
   );
   ENTRY(
-    _("Game Boy"), {
+    _("Sharp LR35902"), {
       CH(DIV_SYSTEM_GB, 1.0f, 0, "")
     }
   );
   ENTRY(
-    _("Atari Lynx"), {
+    _("Atari MIKEY"), {
       CH(DIV_SYSTEM_LYNX, 1.0f, 0, "")
     }
   );
@@ -3992,7 +3992,7 @@ void FurnaceGUI::initSystemPresets() {
       }
     );
   ENTRY(
-    _("NES (Ricoh 2A03)"), {
+    _("Ricoh 2A03"), {
       CH(DIV_SYSTEM_NES, 1.0f, 0, "")
     }
   );
