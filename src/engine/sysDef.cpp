@@ -923,8 +923,8 @@ void DivEngine::registerSystems() {
   );
 
   sysDefs[DIV_SYSTEM_C64_6581]=new DivSysDef(
-    _("Commodore 64 (SID 6581)"), NULL, 0x47, 0x47, 3, false, true, 0, false, 0, 0, 0,
-    _("this computer is powered by the SID chip, which had synthesizer features like a filter and ADSR."),
+    _("MOS Technology 6581 SID"), NULL, 0x47, 0x47, 3, false, true, 0, false, 0, 0, 0,
+    _("the older 6581 variant of sound chip used in the Commodore 64. it has synthesizer features like a filter and ADSR."),
     {_("Channel 1"), _("Channel 2"), _("Channel 3")},
     {"CH1", "CH2", "CH3"},
     {DIV_CH_NOISE, DIV_CH_NOISE, DIV_CH_NOISE},
@@ -935,8 +935,8 @@ void DivEngine::registerSystems() {
   );
 
   sysDefs[DIV_SYSTEM_C64_8580]=new DivSysDef(
-    _("Commodore 64 (SID 8580)"), NULL, 0x07, 0x07, 3, false, true, 0, false, 0, 0, 0,
-    _("this computer is powered by the SID chip, which had synthesizer features like a filter and ADSR.\nthis is the newer revision of the chip."),
+    _("MOS Technology 8580 SID"), NULL, 0x07, 0x07, 3, false, true, 0, false, 0, 0, 0,
+    _("the newer and improved 8580 variant of sound chip used in the Commodore 64. it has synthesizer features like a filter and ADSR."),
     {_("Channel 1"), _("Channel 2"), _("Channel 3")},
     {"CH1", "CH2", "CH3"},
     {DIV_CH_NOISE, DIV_CH_NOISE, DIV_CH_NOISE},
@@ -1077,8 +1077,8 @@ void DivEngine::registerSystems() {
   );
 
   sysDefs[DIV_SYSTEM_VIC20]=new DivSysDef(
-    _("Commodore VIC-20"), NULL, 0x85, 0, 4, false, true, 0, false, 0, 0, 0,
-    _("Commodore's successor to the PET.\nits square wave channels are more than just square..."),
+    _("MOS Technology VIC"), NULL, 0x85, 0, 4, false, true, 0, false, 0, 0, 0,
+    _("the audio/video chip found in the Commodore VIC-20.\nits square wave channels are more than just square..."),
     {_("Low"), _("Mid"), _("High"), _("Noise")},
     {"LO", "MID", "HI", "NO"},
     {DIV_CH_PULSE, DIV_CH_PULSE, DIV_CH_PULSE, DIV_CH_NOISE},
@@ -1099,7 +1099,7 @@ void DivEngine::registerSystems() {
   );
 
   sysDefs[DIV_SYSTEM_SNES]=new DivSysDef(
-    _("SNES"), NULL, 0x87, 0, 8, false, true, 0, false, 1U<<DIV_SAMPLE_DEPTH_BRR, 0, 16,
+    _("SPC700"), NULL, 0x87, 0, 8, false, true, 0, false, 1U<<DIV_SAMPLE_DEPTH_BRR, 0, 16,
     _("FM? nah... samples! Nintendo's answer to Sega."),
     {_("Channel 1"), _("Channel 2"), _("Channel 3"), _("Channel 4"), _("Channel 5"), _("Channel 6"), _("Channel 7"), _("Channel 8")},
     {"CH1", "CH2", "CH3", "CH4", "CH5", "CH6", "CH7", "CH8"},
@@ -1166,8 +1166,8 @@ void DivEngine::registerSystems() {
   );
 
   sysDefs[DIV_SYSTEM_FDS]=new DivSysDef(
-    _("Famicom Disk System (chip)"), NULL, 0x8a, 0, 1, false, true, 0x161, false, 0, 64, 64,
-    _("a disk drive for the Famicom which also contains one wavetable channel."),
+    _("Ricoh 2C33"), NULL, 0x8a, 0, 1, false, true, 0x161, false, 0, 64, 64,
+    _("the sound chip found inside the Famicom Disk System. you get 1 wavetable channel with some funky pitch modulation."),
     {_("FDS")},
     {"FDS"},
     {DIV_CH_WAVE},
@@ -1446,8 +1446,8 @@ void DivEngine::registerSystems() {
   );
 
   sysDefs[DIV_SYSTEM_VBOY]=new DivSysDef(
-    _("Virtual Boy"), NULL, 0x9c, 0, 6, false, true, 0x171, false, 1U<<DIV_SAMPLE_DEPTH_8BIT, 32, 64,
-    _("a console which failed to sell well due to its headache-inducing features."),
+    _("VSU-VUE"), NULL, 0x9c, 0, 6, false, true, 0x171, false, 1U<<DIV_SAMPLE_DEPTH_8BIT, 32, 64,
+    _("the sound chip used in the short-lived Virtual Boy."),
     {_("Channel 1"), _("Channel 2"), _("Channel 3"), _("Channel 4"), _("Channel 5"), _("Noise")},
     {"CH1", "CH2", "CH3", "CH4", "CH5", "NO"},
     {DIV_CH_WAVE, DIV_CH_WAVE, DIV_CH_WAVE, DIV_CH_WAVE, DIV_CH_WAVE, DIV_CH_NOISE},
@@ -1631,8 +1631,8 @@ void DivEngine::registerSystems() {
   }
 
   sysDefs[DIV_SYSTEM_LYNX]=new DivSysDef(
-    _("Atari Lynx"), NULL, 0xa8, 0, 4, false, true, 0x172, false, 1U<<DIV_SAMPLE_DEPTH_8BIT, 0, 0,
-    _("a portable console made by Atari. it has all of Atari's trademark waveforms."),
+    _("MIKEY"), NULL, 0xa8, 0, 4, false, true, 0x172, false, 1U<<DIV_SAMPLE_DEPTH_8BIT, 0, 0,
+    _("the sound chip found in the Atari Lynx. it has all of Atari's trademark waveforms."),
     {_("Channel 1"), _("Channel 2"), _("Channel 3"), _("Channel 4")},
     {"CH1", "CH2", "CH3", "CH4"},
     {DIV_CH_WAVE, DIV_CH_WAVE, DIV_CH_WAVE, DIV_CH_WAVE},
@@ -2017,7 +2017,7 @@ void DivEngine::registerSystems() {
   );
 
   sysDefs[DIV_SYSTEM_T6W28]=new DivSysDef(
-    _("T6W28"), NULL, 0xbf, 0, 4, false, true, 0x160, false, 0, 0, 0,
+    _("Toshiba T6W28"), NULL, 0xbf, 0, 4, false, true, 0x160, false, 0, 0, 0,
     _("an SN76489 derivative used in Neo Geo Pocket, has independent stereo volume and noise channel frequency."),
     {_("Square 1"), _("Square 2"), _("Square 3"), _("Noise")},
     {"S1", "S2", "S3", "NO"},
@@ -2101,8 +2101,8 @@ void DivEngine::registerSystems() {
   );
 
   sysDefs[DIV_SYSTEM_PV1000]=new DivSysDef(
-    _("Casio PV-1000"), NULL, 0xcb, 0, 3, false, true, 0, false, 0, 0, 0,
-    _("a game console with 3 channels of square wave. it's what happens after fusing TIA and VIC together."),
+    _("NEC D65010G031"), NULL, 0xcb, 0, 3, false, true, 0, false, 0, 0, 0,
+    _("a generic gate array that Casio wired up to be a sound chip. like the NEC μPD1771C-017 but without any of the good aspects"),
     {_("Square 1"), _("Square 2"), _("Square 3")},
     {"S1", "S2", "S3"},
     {DIV_CH_PULSE, DIV_CH_PULSE, DIV_CH_PULSE},

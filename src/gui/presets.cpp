@@ -1777,11 +1777,12 @@ void FurnaceGUI::initSystemPresets() {
       CH(DIV_SYSTEM_NES_VRC7, 1.0f, 0, "")
     }
   );
-  SUB_ENTRY(
-    _("Famicom Disk System (compound system)"), {
-      CH(DIV_SYSTEM_NES_FDS, 1.0f, 0, "")
-    }
-  );
+  //doesn't work:
+  //SUB_ENTRY(
+  //  _("Famicom Disk System (compound system)"), {
+  //    CH(DIV_SYSTEM_NES_FDS, 1.0f, 0, "")
+  //  }
+  //);
   SUB_ENTRY(
     _("Sega Master System + FM Expansion (compound system)"), {
       CH(DIV_SYSTEM_SMS_OPLL, 1.0f, 0, "")
@@ -1792,11 +1793,12 @@ void FurnaceGUI::initSystemPresets() {
       CH(DIV_SYSTEM_ARCADE, 1.0f, 0, "")
     }
   );
-  SUB_ENTRY(
-    _("MSX + SCC (compound system)"), {
-      CH(DIV_SYSTEM_MSX2, 1.0f, 0, "")
-    }
-  );
+  //doesn't work:
+  //SUB_ENTRY(
+  //  _("MSX + SCC (compound system)"), {
+  //    CH(DIV_SYSTEM_MSX2, 1.0f, 0, "")
+  //  }
+  //);
   CATEGORY_END
 
   CATEGORY_BEGIN(_("Testing Area"),_("let's take some chiptune tests."));
