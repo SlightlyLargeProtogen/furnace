@@ -2332,7 +2332,7 @@ void DivEngine::registerSystems() {
   );
 
   sysDefs[DIV_SYSTEM_C64_PCM]=new DivSysDef(
-    _("Commodore 64 (SID 6581) with software PCM"), NULL, 0xe2, 0, 4, false, true, 0, false, (1U<<DIV_SAMPLE_DEPTH_8BIT)|(1U<<DIV_SAMPLE_DEPTH_16BIT), 0, 0,
+    _("MOS Technology SID (6581) with software PCM"), NULL, 0xe2, 0, 4, false, true, 0, false, (1U<<DIV_SAMPLE_DEPTH_8BIT)|(1U<<DIV_SAMPLE_DEPTH_16BIT), 0, 0,
     _("the 6581 had a quirk which allowed playback of 4-bit samples by writing PCM data to the volume register."),
     {_("Channel 1"), _("Channel 2"), _("Channel 3"), _("PCM")},
     {"CH1", "CH2", "CH3", "P"},
