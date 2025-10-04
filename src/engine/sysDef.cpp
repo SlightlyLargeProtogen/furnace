@@ -1336,7 +1336,7 @@ void DivEngine::registerSystems() {
   );
 
   sysDefs[DIV_SYSTEM_MULTIPCM]=new DivSysDef(
-    _("MultiPCM"), NULL, 0x92, 0, 28, false, true, 0x161, false, (1U<<DIV_SAMPLE_DEPTH_8BIT)|(1U<<DIV_SAMPLE_DEPTH_12BIT), 0, 0,
+    _("Yamaha YMW258-F (MultiPCM)"), NULL, 0x92, 0, 28, false, true, 0x161, false, (1U<<DIV_SAMPLE_DEPTH_8BIT)|(1U<<DIV_SAMPLE_DEPTH_12BIT), 0, 0,
     _("how many channels of PCM do you want?\nMultiPCM: yes"),
     {_("Channel 1"), _("Channel 2"), _("Channel 3"), _("Channel 4"), _("Channel 5"), _("Channel 6"), _("Channel 7"), _("Channel 8"), _("Channel 9"), _("Channel 10"), _("Channel 11"), _("Channel 12"), _("Channel 13"), _("Channel 14"), _("Channel 15"), _("Channel 16"), _("Channel 17"), _("Channel 18"), _("Channel 19"), _("Channel 20"), _("Channel 21"), _("Channel 22"), _("Channel 23"), _("Channel 24"), _("Channel 25"), _("Channel 26"), _("Channel 27"), _("Channel 28")},
     {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28"},
