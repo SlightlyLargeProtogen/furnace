@@ -856,7 +856,7 @@ void DivEngine::registerSystems() {
 
   sysDefs[DIV_SYSTEM_GB]=new DivSysDef(
     _("Sharp LR35902"), NULL, 0x04, 0x04, 4, false, true, 0x161, false, 0, 32, 16,
-    _("the sound chip found in the Game Boy.\nit's much like the Ricoh 2A03, but instead it's got a wavetable and DPCM went missing."),
+    _("the sound chip found in the Game Boy.\nit's like the Ricoh 2A03, but instead of triangle it's got a wavetable channel and DPCM went missing."),
     {_("Pulse 1"), _("Pulse 2"), _("Wavetable"), _("Noise")},
     {"S1", "S2", "WA", "NO"},
     {DIV_CH_PULSE, DIV_CH_PULSE, DIV_CH_WAVE, DIV_CH_NOISE},
