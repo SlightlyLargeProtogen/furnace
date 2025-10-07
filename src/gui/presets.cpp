@@ -3539,7 +3539,7 @@ void FurnaceGUI::initSystemPresets() {
   //      CH(DIV_SYSTEM_YM2612_DUALPCM_EXT, 1.0f, 0, "chipType=2")
   //    }
   //  );
-  //ENTRY(
+  ENTRY(
     _("Yamaha YM2413 (OPLL)"), {
       CH(DIV_SYSTEM_OPLL, 1.0f, 0, "")
     }
